@@ -26,7 +26,7 @@ jobs:
     - run: git submodule absorbgitdirs
     - uses: actions/checkout@v2
       with:
-        repository: lichess-org/ab
+        repository: lichess-org/ab-stub
         ssh-key: ${{ secrets.id_rsa_ab }}
         ref: master
         path: ab
