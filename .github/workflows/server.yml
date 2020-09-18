@@ -2,6 +2,7 @@ name: Build server
 
 on:
   push:
+
     paths:
     - '.github/workflows/server.yml'
     - 'app/**'
@@ -11,7 +12,7 @@ on:
     - 'translation/**'
     - 'build.sbt'
     - 'lila'
-    - 'conf/application.conf.default'
+    - 'conf/application.conf'
     - '.sbtopts.default'
     branches-ignore:
     - 'l10n_master'
@@ -25,7 +26,7 @@ on:
     - 'translation/source/**'
     - 'build.sbt'
     - 'lila'
-    - 'conf/application.conf.default'
+    - 'conf/application.conf'
     - '.sbtopts.default'
 
 jobs:
